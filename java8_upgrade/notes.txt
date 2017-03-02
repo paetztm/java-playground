@@ -1,0 +1,3 @@
+@FunctionalInterface added in java 8 - interface has a single abstract method
+
+java.util.function - has Consumer, Predicate, Supplier, Function
