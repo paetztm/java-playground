@@ -1,0 +1,62 @@
+A good algorithm should work
+A good algorithm should be understandable
+Efficient
+
+Complexity theory
+Types of Complexity
+Time
+Space
+Other Resources
+- Network
+- Graphics
+- Hardware (Printers, 3D printers, CPUs, Sensors, etc)
+
+Big O Notation
+Worst case behavior
+Asymptotic behavior - algorithms performance as problem grows large
+Big O Rules
+- If an algorithm performs f(N) steps, then it is O(f(N))
+- If an algorithm performs f(N) steps followed by g(N) steps, then it is O(f(N) + g(N))
+- If f(N) > g(N) for large N, then O(f(N) + g(N)) = O(f(N))
+- If an algorithm performs g(N) steps for each of f(N) steps, then it is O(f(N) * g(N))
+- Ignore constant multiples: O(C * f(N)) = O(f(N))
+
+Performance in order - low to high
+Log N
+Sqrt N
+N
+N^2
+2^N
+N!
+
+
+P - Polynomial Time
+NP - Non-deterministic polynomial time
+
+Random numbers
+- Pseudo Random Number Generators - most common and fast
+- Cryptographic Random Number Generators - more difficult to predict but still not random
+- True random number generators - typically based on something physical that can't be predicted - atmospheric wind conditions
+
+Linear Congruential Generators (LCGs)
+X sub(n+1) = (X sub(n) * A + B)(mod M)
+
+Example A=5, B=3, M=7
+X sub(0) = 0
+X sub(1) = (0*5 + 3)(mod 7) = 3
+X sub(2) = (3*5 + 3)(mod 7) = 4
+...
+
+Full Period - all numbers generated in mod value (7)
+3 conditions:
+B and M are relatively prime - no common factors except 1
+A - 1 is divisible by all prime factors of M
+A - 1 is a multiple of 4 if M is
+
+Pros and Cons
+Fast
+May not generate every possible number
+Not very random
+
+Multiplicative Congruential Generator (MCG)
+B is 0
